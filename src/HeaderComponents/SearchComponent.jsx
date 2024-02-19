@@ -17,7 +17,7 @@ export const SearchComponent = () => {
   const [dataCountries, setDataCountries] = useState([])
   const [search, setSearch] = useState("")
 
-  const objetoDatos = "/data.json"
+  const objetoDatos = "data.json"
     useEffect(() => {
         fetch(objetoDatos)
             .then(datosJson => datosJson.json())
