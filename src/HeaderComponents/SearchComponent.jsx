@@ -17,7 +17,7 @@ export const SearchComponent = () => {
   const [dataCountries, setDataCountries] = useState([])
   const [search, setSearch] = useState("")
 
-  const objetoDatos = "../data.json"
+  const objetoDatos = "/src/data.json"
     useEffect(() => {
         fetch(objetoDatos)
             .then(datosJson => datosJson.json())
@@ -32,7 +32,7 @@ const DataFrom = (e) => {
   setSearch(e.target.value)
   // console.log(e.target.value)
 }
-
+console.log(dataCountries)
 // filtrado
 
 let resultado = []
