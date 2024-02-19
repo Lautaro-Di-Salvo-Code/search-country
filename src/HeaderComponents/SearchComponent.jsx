@@ -74,7 +74,7 @@ if(!search ){
           className='div__section--input dark:bg-background-darksoft bg-background-lighthard
            scale-110 placeholder:text-[#000] p-[1.5rem] md:p-[2rem] cursor-pointer rounded-[.4rem] 
            
-            dark:placeholder:text-[#fff] placeholder:text-[1rem] md:placeholder:text-[2rem]  w-[84vw]
+            dark:placeholder:text-[#fff] placeholder:text-[1rem]  md:placeholder:text-[2rem]  w-[84vw]
             h-[2vh] md:w-[24rem] md:h-[4vh] '
           type="search" placeholder='Search for a country'/>
 
