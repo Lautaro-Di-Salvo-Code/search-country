@@ -22,7 +22,7 @@ export const Home = ( ) => {
            overflow-hidden'>
             {resultado.map(e => (
 
-            <Link key={e.name} to={`/Home/${e.name}`} >{
+            <Link key={e.name} to={`/All/${e.name}`} >{
                 
             <div   className='z-30 slide-fwd-center dark:bg-background-darksoft bg-background-lighthard
                 rounded-[10px] hover:scale-110 ease-out duration-300 flex justify-center text-center

@@ -99,10 +99,10 @@ if(!search ){
               </article>
       <Routes>
 
-        <Route path="/Home" element={<Home />}/>
+        <Route path="/All" element={<Home />}/>
         {/* ac+a el /:name captura los datos del link de los componentes y pasa los datos con el hook useParamos directo a el componente 
         que estás renderizando */ }
-        <Route path="/Home/:name" element={<CountryComponent />}/>
+        <Route path="/All/:name" element={<CountryComponent />}/>
         <Route path="/Africa" element={<AfricaSection    />}/>
         <Route path="/Africa/:name" element={<CountryComponent />}/>
         <Route path="/America" element={<AmericaInfo    />}/>
