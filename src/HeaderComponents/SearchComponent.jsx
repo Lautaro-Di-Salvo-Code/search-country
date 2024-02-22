@@ -16,14 +16,16 @@ export const Contexto = createContext()
 export const SearchComponent = () => {
   const [dataCountries, setDataCountries] = useState([])
   const [search, setSearch] = useState("")
+  const [load, setLoad] = useState(false)
 
   const objetoDatos = "data.json"
     useEffect(() => {
+      setLoad(true)
         fetch(objetoDatos)
             .then(datosJson => datosJson.json())
             .then(json =>
                 setDataCountries(json))
-                
+                .finally(() => setLoad(false))
   
             }, [])
 
@@ -32,7 +34,7 @@ const DataFrom = (e) => {
   setSearch(e.target.value)
   // console.log(e.target.value)
 }
-console.log(dataCountries)
+
 // filtrado
 
 let resultado = []
@@ -52,7 +54,7 @@ if(!search ){
 }
   return (
     <>
-    <Contexto.Provider value={{dataCountries, setDataCountries,resultado,search }} >
+    <Contexto.Provider value={{dataCountries, setDataCountries,resultado,search ,load}} >
 
     
     <HashRouter>

@@ -5,7 +5,7 @@ import {Contexto} from "../HeaderComponents/SearchComponent"
 
 
 export const CountryComponent = () => {
-  const {dataCountries} = useContext(Contexto)
+  const {dataCountries } = useContext(Contexto)
 
 
   // name viene del objeto seleccionado y la informacion la otorga por parametros el hook useParams
@@ -31,9 +31,9 @@ const NavigateBack = () => {
   return (
     <>  
 
-
+    
       
-
+    
         <section className="dark:bg-background-darkhard bg-background-lightsoft  h-[70vh]  border-gray-100">
           <div className="w-full flex  mx-auto md:justify-start h-[6rem] pl-[12vw]">
 
@@ -47,26 +47,26 @@ const NavigateBack = () => {
           <div className="w-[100%]  flex justify-center mx-auto md:m-[3rem]">
           
 
-            <img  className="h-[14rem] w-auto md:w-auto  md:h-[26rem] " src={paisObtenido.flags.png} alt="" />
+            <img  className="h-[14rem] w-auto md:w-auto  md:h-[26rem] " src={paisObtenido?.flags.png} alt="" />
           </div>
 
 
 
           <div className="flex  flex-col mx-auto  md:m-[3rem]">
-            <p className="font-bold text-[2rem] md:text-[3rem] flex justify-center md:pl-[3rem] dark:text-[#fff] text-[#000]">{paisObtenido.name}</p>
+            <p className="font-bold text-[2rem] md:text-[3rem] flex justify-center md:pl-[3rem] dark:text-[#fff] text-[#000]">{paisObtenido?.name}</p>
 
           <article className=" m-[3rem] grid grid-rows-2  grid-cols-1 h-[32vh] md:grid-rows-1 md:grid-cols-2" >
             <div  >
 
-              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">Population: <p className="text-[1rem] md:text-[1.3rem] font-light">{paisObtenido.population}</p> </b>
-              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">Region: <p className="flex place-items-center text-[1rem] md:text-[1.3rem] font-light">{paisObtenido.region}</p> </b>
-              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">SubRegion: <p className="flex place-items-center  text-[1rem] md:text-[1.3rem] font-light">{paisObtenido.subregion}</p> </b>
-              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">Capital: <p className="flex place-items-center text-[1rem] md:text-[1.3rem] font-light">{paisObtenido.capital}</p> </b>
+              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">Population: <p className="text-[1rem] md:text-[1.3rem] font-light">{paisObtenido?.population}</p> </b>
+              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">Region: <p className="flex place-items-center text-[1rem] md:text-[1.3rem] font-light">{paisObtenido?.region}</p> </b>
+              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">SubRegion: <p className="flex place-items-center  text-[1rem] md:text-[1.3rem] font-light">{paisObtenido?.subregion}</p> </b>
+              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">Capital: <p className="flex place-items-center text-[1rem] md:text-[1.3rem] font-light">{paisObtenido?.capital}</p> </b>
             </div>
             <div>
-              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">Top Level Domain: <p className="flex place-items-center text-[1rem] md:text-[1.3rem] font-light">{paisObtenido.topLevelDomain}</p> </b>
-              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">Currencies: <p className="flex place-items-center text-[1rem] md:text-[1.3rem] font-light">{paisObtenido.currencies[0].name}</p> </b>
-              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">Languages: <p className="flex place-items-center text-[1rem] md:text-[1.3rem] font-light">{paisObtenido.languages[0].name} </p> 
+              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">Top Level Domain: <p className="flex place-items-center text-[1rem] md:text-[1.3rem] font-light">{paisObtenido?.topLevelDomain}</p> </b>
+              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">Currencies: <p className="flex place-items-center text-[1rem] md:text-[1.3rem] font-light">{paisObtenido?.currencies[0].name}</p> </b>
+              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">Languages: <p className="flex place-items-center text-[1rem] md:text-[1.3rem] font-light">{paisObtenido?.languages[0].name} </p> 
              
               </b>
 

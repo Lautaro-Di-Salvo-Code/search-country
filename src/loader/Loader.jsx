@@ -1,5 +1,7 @@
 import './Loader.css'
-const Loader = () => {
+export const LuaderFun = () => {
+
+
   return (
     <>
     <section className='  grid place-items-center h-[5vh] relative '>
@@ -21,4 +23,3 @@ const Loader = () => {
   )
 }
 
-export default Loader
