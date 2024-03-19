@@ -3,7 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
+html{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #302d2d #c9cfc2;
+  scroll-margin: 0;
+  
+}
 * {
   margin: 0;
   font-size: 16px; }
@@ -12,7 +19,8 @@ body {
   background-color: #202D36;
   font-family: 'Nunito Sans', sans-serif;
   color: #fff;
-  overflow-x: hidden; }
+  
+ }
 /* 
 .section {
   background-color: #2B3743; }

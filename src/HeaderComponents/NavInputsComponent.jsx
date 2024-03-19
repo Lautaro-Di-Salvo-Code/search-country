@@ -24,5 +24,7 @@ el light, con los dark: son cuando se aprieta el dark
 
       </div>
     </div>
+
+   
   ) 
 }

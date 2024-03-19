@@ -8,27 +8,17 @@ import { EuropaInfo } from '../BodyComponents/EuropaInfo';
 import  { useEffect, useState , createContext} from 'react';
 import { CountryComponent } from '../BodyComponents/CountryComponent';
 import { NavInputsComponent } from './NavInputsComponent';
+import { useFetch } from '../useFetch';
 
 
 
 export const Contexto = createContext()
 
 export const SearchComponent = () => {
-  const [dataCountries, setDataCountries] = useState([])
-  const [search, setSearch] = useState("")
-  const [load, setLoad] = useState(false)
-
-  const objetoDatos = "data.json"
-    useEffect(() => {
-      setLoad(true)
-        fetch(objetoDatos)
-            .then(datosJson => datosJson.json())
-            .then(json =>
-                setDataCountries(json))
-                .finally(() => setLoad(false))
   
-            }, [])
+  const [search, setSearch] = useState("")
 
+  const {dataCountries,load} = useFetch("data.json")
 
 const DataFrom = (e) => { 
   setSearch(e.target.value)
@@ -54,7 +44,7 @@ if(!search ){
 }
   return (
     <>
-    <Contexto.Provider value={{dataCountries, setDataCountries,resultado,search ,load}} >
+    <Contexto.Provider value={{dataCountries,resultado,search ,load}} >
 
     
     <HashRouter>
