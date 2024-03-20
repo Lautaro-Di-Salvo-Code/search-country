@@ -37,7 +37,7 @@ export const EuropaInfo = () => {
     gap-8 grid
         
     vsm:grid-cols-1 
-    
+    pt-[2rem]
     md:grid-cols-4 
      
        overflow-hidden'>

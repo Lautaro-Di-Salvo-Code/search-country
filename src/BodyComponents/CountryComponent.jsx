@@ -34,48 +34,45 @@ const NavigateBack = () => {
     
       
     
-        <section className="dark:bg-background-darkhard bg-background-lightsoft  h-[70vh]  border-gray-100">
-          <div className="w-full flex  mx-auto md:justify-start h-[6rem] pl-[12vw]">
+        <section className="dark:bg-background-darkhard bg-background-lightsoft pt-[3rem]  h-[70vh]  border-gray-100">
+          <div className="w-[100%]  mx-auto lg:w-full flex lg:justify-around   h-[6rem]">
 
-            <button className="text-[1rem] md:text-[3rem] h-[4rem] w-[7rem] md:w-[10rem] dark:bg-background-darksoft
-             bg-background-lightsoft dark:hover:bg-[#41596c] hover:bg-background-lighthard
+            <button className="text-[1.5rem] mx-auto  lg:text-[3rem] h-[4rem] w-[10rem] lg:w-[10rem] dark:bg-background-darksoft
+             bg-background-lighthard dark:hover:bg-[#41596c] hover:bg-background-lighthard
               dark:text-[#fff] text-[#000] rounded-xl" onClick={NavigateBack}>{signo}Back</button>
+            
           </div>
 
-          <article className=" grid h-[39vh] grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 mx-auto">
+          <article className=" grid h-[39vh] grid-cols-1 grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 ">
 
-          <div className="w-[100%]  flex justify-center mx-auto md:m-[3rem]">
+          <div className="w-[100%]  flex justify-center  lg:m-[3rem]">
           
 
-            <img  className="h-[14rem] w-auto md:w-auto  md:h-[26rem] " src={paisObtenido?.flags.png} alt="" />
+            <img  className="h-auto w-[28rem] lg:w-[43rem]  lg:h-auto " src={paisObtenido?.flags.png} alt="" />
           </div>
 
 
 
-          <div className="flex  flex-col mx-auto  md:m-[3rem]">
-            <p className="font-bold text-[2rem] md:text-[3rem] flex justify-center md:pl-[3rem] dark:text-[#fff] text-[#000]">{paisObtenido?.name}</p>
+          <div className="flex  flex-col mx-auto  lg:m-[3rem]">
+            <p className="font-bold text-[2rem] lg:text-[3rem] flex justify-center  dark:text-[#fff] text-[#000]">{paisObtenido?.name}</p>
 
-          <article className=" m-[3rem] grid grid-rows-2  grid-cols-1 h-[32vh] md:grid-rows-1 md:grid-cols-2" >
-            <div  >
+          <article className=" m-[3rem] grid grid-rows-2  grid-cols-1 h-[32vh] lg:grid-rows-1 lg:grid-cols-2" >
+            <div className="mb-[2rem]" >
 
-              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">Population: <p className="text-[1rem] md:text-[1.3rem] font-light">{paisObtenido?.population}</p> </b>
-              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">Region: <p className="flex place-items-center text-[1rem] md:text-[1.3rem] font-light">{paisObtenido?.region}</p> </b>
-              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">SubRegion: <p className="flex place-items-center  text-[1rem] md:text-[1.3rem] font-light">{paisObtenido?.subregion}</p> </b>
-              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">Capital: <p className="flex place-items-center text-[1rem] md:text-[1.3rem] font-light">{paisObtenido?.capital}</p> </b>
+              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">Population: <p className="text-[1rem] lg:text-[1.3rem] font-light">{paisObtenido?.population}</p> </b>
+              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">Region: <p className="flex place-items-center text-[1rem] lg:text-[1.3rem] font-light">{paisObtenido?.region}</p> </b>
+              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">SubRegion: <p className="flex place-items-center  text-[1rem] lg:text-[1.3rem] font-light">{paisObtenido?.subregion}</p> </b>
+              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">Capital: <p className="flex place-items-center text-[1rem] lg:text-[1.3rem] font-light">{paisObtenido?.capital}</p> </b>
             </div>
             <div>
-              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">Top Level Domain: <p className="flex place-items-center text-[1rem] md:text-[1.3rem] font-light">{paisObtenido?.topLevelDomain}</p> </b>
-              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">Currencies: <p className="flex place-items-center text-[1rem] md:text-[1.3rem] font-light">{paisObtenido?.currencies[0].name}</p> </b>
-              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">Languages: <p className="flex place-items-center text-[1rem] md:text-[1.3rem] font-light">{paisObtenido?.languages[0].name} </p> 
-             
+              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">Top Level Domain: <p className="flex place-items-center text-[1rem] lg:text-[1.3rem] font-light">{paisObtenido?.topLevelDomain}</p> </b>
+              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">Currencies: <p className="flex place-items-center text-[1rem] lg:text-[1.3rem] font-light">{paisObtenido?.currencies[0].name}</p> </b>
+              <b className="font-bold flex text-[1.5rem] gap-4 dark:text-[#fff] text-[#000]">Languages: <p className="flex place-items-center text-[1rem] lg:text-[1.3rem] font-light">{paisObtenido?.languages[0].name} </p> 
+
               </b>
 
             </div>  
           </article>
-
-
-
-
           </div>
           
           </article>

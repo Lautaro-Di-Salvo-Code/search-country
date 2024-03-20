@@ -54,19 +54,17 @@ if(!search ){
 
     <div className='  grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 md:justify-around md:max-w-1400pxMaxW md:w-full marker:content-center
       h-[10vh] dark:bg-[#202D36] bg-background-lightsoft px-[2rem]  md:px-[4rem] mx-auto py-[10vh]  md:py-[10vh] gap-[4.5rem] md:gap-[1.5rem]'>
-
-
-
       <section className='w-[5rem] flex justify-self-start'>
-
-
         <form method="post" action="/send/">
           
           <input list='items' onChange={DataFrom} value={search}
           className='div__section--input dark:bg-background-darksoft bg-background-lighthard
            scale-110 placeholder:text-[#000] p-[1.5rem] md:p-[2rem] cursor-pointer rounded-[.4rem] 
            
-            dark:placeholder:text-[#fff] placeholder:text-[1rem]  md:placeholder:text-[2rem]  w-[84vw]
+            dark:placeholder:text-[#fff]
+            placeholder:text-[1rem]  
+            md:placeholder:text-[2rem]
+            w-[84vw]
             h-[2vh] md:w-[24rem] md:h-[4vh] '
           type="search" placeholder='Search for a country'/>
 

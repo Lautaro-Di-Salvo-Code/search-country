@@ -50,7 +50,7 @@ export const AsiaInfo = () => {
     gap-8 grid
     ssm:grid-cols-1 
     vsm:grid-cols-2 
-    
+    pt-[2rem]
     md:grid-cols-4 
     
        overflow-hidden'>

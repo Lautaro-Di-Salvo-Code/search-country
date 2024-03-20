@@ -14,7 +14,7 @@ export const Home = ( ) => {
         <div className=' dark:bg-background-darkhard bg-background-lightsoft'>
         {   <section className=' h-auto mx-auto max-w-1400pxMaxW 
         gap-8 grid
-        
+        pt-[2rem]
         vsm:grid-cols-1  
          
         md:grid-cols-4 

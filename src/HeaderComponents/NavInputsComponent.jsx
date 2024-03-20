@@ -2,14 +2,14 @@ import {NavLink} from 'react-router-dom'
 
 export const NavInputsComponent = () => {
   return (
-    <div className='w-[14rem] relative flex justify-self-end'>
+    <div className=' w-[14rem] mx-auto relative flex justify-self-end'>
 
 
 {/* los estilos que están sin dark, son los que cargan en 
 el light, con los dark: son cuando se aprieta el dark
  ya que es una pagina en modo escuro por defecto */}
     <label  htmlFor="label-input" className=' label-class rounded-[.4rem] 
-    flex cursor-pointer justify-center h-[3rem] w-[11rem] md:h-[4rem] md:w-[14rem]  p-3 text-[1rem] md:text-[2rem]
+    flex cursor-pointer justify-center h-[4rem] w-[11rem] md:h-[4rem] md:w-[14rem]  p-3 text-[1.5rem] md:text-[2rem]
      dark:bg-background-darksoft bg-background-lighthard  text-[#000] dark:text-[#fff]' > Region</label>
     <input type="checkbox" name="" id="label-input" />
 
