@@ -1,4 +1,4 @@
-import  { HashRouter, Routes, Route } from 'react-router-dom';
+import  { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Home } from '../BodyComponents/Home';
 import { AfricaSection } from '../BodyComponents/AfricaInfo';
 import { AmericaInfo } from '../BodyComponents/AmericaInfo';
@@ -91,6 +91,7 @@ if(!search ){
               </article>
       <Routes>
 
+        <Route path="*" element={ <Navigate to="/All"/>}/>
         <Route path="/All" element={<Home />}/>
         {/* ac+a el /:name captura los datos del link de los componentes y pasa los datos con el hook useParamos directo a el componente 
         que estás renderizando */ }
