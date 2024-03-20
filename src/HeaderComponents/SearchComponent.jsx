@@ -53,7 +53,7 @@ if(!search ){
     <article className='dark:bg-background-darkhard bg-background-lightsoft '>
 
     <div className='  grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 md:justify-around md:max-w-1400pxMaxW md:w-full marker:content-center
-      h-[10vh] dark:bg-[#202D36] bg-background-lightsoft px-[2rem]  md:px-[4rem] mx-auto py-[10vh]  md:py-[10vh] gap-[4.5rem] md:gap-[1.5rem]'>
+      h-[10vh] dark:bg-[#202D36] bg-background-lightsoft px-[2rem]  md:px-[4rem] mx-auto pt-[2rem] pb-[7rem]  md:py-[10vh] gap-[4.5rem] md:gap-[1.5rem]'>
       <section className='w-[5rem] flex justify-self-start'>
         <form method="post" action="/send/">
           
